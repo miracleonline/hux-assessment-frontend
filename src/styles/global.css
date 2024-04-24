@@ -1,0 +1,76 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Apply box-sizing border-box to all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Style links */
+a {
+  color: #007bff; /* Blue color */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Set default styles for headings */
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+/* Set default styles for buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Set default styles for form inputs */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Set default styles for form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style loading spinner */
+.spinner {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #007bff; /* Blue color */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
